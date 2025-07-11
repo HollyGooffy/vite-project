@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '/src/assets/logo.svg';
 import { ShoppingBasket, Menu } from 'lucide-react';
-import Button from "../Button/Button.jsx";
+import Button from "../Button/Button";
 
 const Header = () => {
     const navItems = ["Мясо", "Акции", "Наборы", "Блог", "Контакты"];

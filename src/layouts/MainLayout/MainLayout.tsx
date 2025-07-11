@@ -1,4 +1,4 @@
-import ShowCase from "../../Pages/ShowСase/ShowCase.jsx";
+import ShowCase from "../../Pages/ShowСase/ShowCase";
 
 const MainLayout = () => {
     return (

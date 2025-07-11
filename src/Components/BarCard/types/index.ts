@@ -1,0 +1,1 @@
+export type {BarCardProps} from "./BarCard.types"

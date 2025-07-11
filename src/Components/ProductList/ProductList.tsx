@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import ProductCard from '../ProductCard/ProductCard.jsx';
+import ProductCard from '../ProductCard/ProductCard';
 import productData from '../../data/productsData';
 import { CircleChevronRight } from 'lucide-react';
 import { CircleChevronLeft } from 'lucide-react';
+import {useState} from "react";
 
 const ProductsList = () => {
     const [showAll, setShowAll] = useState(false);

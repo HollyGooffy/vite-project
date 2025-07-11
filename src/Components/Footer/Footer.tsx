@@ -1,6 +1,5 @@
-import React from 'react';
-import Input from "../Input/Input.jsx";
-import Button from "../Button/Button.jsx";
+import Input from "../Input/Input";
+import Button from "../Button/Button";
 import telegram from '/src/assets/telegram.svg';
 import VK from '/src/assets/VK.svg';
 

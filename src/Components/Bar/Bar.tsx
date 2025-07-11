@@ -1,11 +1,11 @@
-import React from 'react';
-import BarCard from '/src/Components/BarCard/BarCard.jsx';
+import BarCard from "../BarCard/BarCard";
 import chickenIcon from '/src/assets/chicken.svg';
 import beefIcon from '/src/assets/beef.svg';
 import porkIcon from '/src/assets/pork.svg';
+import {CategoryItem} from "./types"
 
 const Bar = () => {
-    const categories = [
+    const categories:CategoryItem[] = [
         { icon: porkIcon, name: 'Акции' },
         { icon: porkIcon, name: 'Свинина' },
         { icon: beefIcon, name: 'Говядина' },

@@ -1,15 +1,14 @@
-import React from 'react';
-import Header from "../../Components/Header/Header.jsx";
-import Input from "../../Components/Input/Input.jsx";
-import ProductList from "../../Components/ProductList/ProductList.jsx";
-import Bar from "../../Components/Bar/Bar.jsx";
-import Footer from "../../Components/Footer/Footer.jsx";
+import Header from "../../Components/Header/Header";
+import Input from "../../Components/Input/Input";
+import ProductList from "../../Components/ProductList/ProductList.js";
+import Bar from "../../Components/Bar/Bar";
+import Footer from "../../Components/Footer/Footer";
 import { Search } from 'lucide-react';
 
 const ShowCase = () => {
     return (
         <div className="text-xs flex flex-col min-h-screen w-full items-center">
-            <Header className="" />
+            <Header/>
 
             <main className="w-full max-w-screen-xl max-xs:px-1 px-3 md:px-6 lg:px-8 xl:px-12 py-6 flex flex-col items-center">
                 <div className="w-full px-3 ">
@@ -33,7 +32,7 @@ const ShowCase = () => {
                 </div>
             </main>
 
-            <Footer className="" />
+            <Footer/>
         </div>
     );
 };

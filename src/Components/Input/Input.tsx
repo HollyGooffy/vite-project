@@ -1,17 +1,19 @@
-import React, { useState, useRef } from 'react';
-import { Search, X } from 'lucide-react';
+import { useState, useRef, ChangeEvent, FormEvent } from 'react';
+import { X } from 'lucide-react';
+import {InputProps} from "./types";
+
 
 const Input = ({
-                       icon = null,
-                       placeholder = "Искать в магазине",
-                       onSearch = () => {},
-                       clearable = true
-                   }) => {
-    const [inputValue, setInputValue] = useState('');
-    const [isFocused, setIsFocused] = useState(false);
-    const inputRef = useRef(null);
+                   icon = null,
+                   placeholder = "Искать в магазине",
+                   onSearch = () => {},
+                   clearable = true
+               }: InputProps) => {
+    const [inputValue, setInputValue] = useState<string>('');
+    const [isFocused, setIsFocused] = useState<boolean>(false);
+    const inputRef = useRef<HTMLInputElement>(null);
 
-    const handleChange = (e) => {
+    const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
         setInputValue(e.target.value);
     };
 
@@ -21,13 +23,12 @@ const Input = ({
         onSearch('');
     };
 
-    const handleSearch = (e) => {
+    const handleSearch = (e: FormEvent) => {
         e.preventDefault();
         onSearch(inputValue);
     };
 
     const showClearButton = clearable && inputValue.length > 0;
-
     const isActive = isFocused || inputValue.length > 0;
 
     return (
