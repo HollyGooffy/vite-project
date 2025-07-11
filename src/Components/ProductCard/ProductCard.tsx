@@ -6,7 +6,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
     return (
         <div className={`rounded-2xl relative overflow-hidden transition-all duration-300 flex flex-col`}>
             {!product.inStock && (
-                <div className="absolute top-2 left-2 bg-white text-xs font-semibold text-black px-1.5 py-0.5 rounded-lg z-10 text-[8px]">
+                <div className="absolute top-2 left-2 bg-white text-xs font-semibold text-black px-2.5 py-0.5 rounded-lg z-10 text-[8px]">
                     Нет в наличии
                 </div>
             )}

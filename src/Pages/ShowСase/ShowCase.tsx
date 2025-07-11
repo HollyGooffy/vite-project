@@ -8,7 +8,9 @@ import { Search } from 'lucide-react';
 const ShowCase = () => {
     return (
         <div className="text-xs flex flex-col min-h-screen w-full items-center">
-            <Header/>
+            <div className="sm:px-3 max-sm:px-3 md:px-6 lg:px-8 xl:w-[1280px] xl:px-0 w-full">
+                <Header/>
+            </div>
 
             <main className="w-full max-w-screen-xl max-xs:px-1 px-3 md:px-6 lg:px-8 xl:px-12 py-6 flex flex-col items-center">
                 <div className="w-full px-3 ">
